@@ -37,6 +37,20 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "rncrash-tvOS";
 		};
+		B68699C022BCDC1200E876B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68699BB22BCDC1100E876B4 /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNGestureHandler;
+		};
+		B68699C222BCDC1200E876B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B68699BB22BCDC1100E876B4 /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5C32A36220C603B000FFB8D;
+			remoteInfo = "RNGestureHandler-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +77,7 @@
 		A7D489EC54617AD1CB8CBBCC /* Pods-rncrashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rncrashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-rncrashTests/Pods-rncrashTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD82086F83CF1C15F9B46500 /* Pods-rncrash-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rncrash-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-rncrash-tvOS/Pods-rncrash-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		B5AABDB7AD57AABED755E110 /* Pods-rncrash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rncrash.release.xcconfig"; path = "Pods/Target Support Files/Pods-rncrash/Pods-rncrash.release.xcconfig"; sourceTree = "<group>"; };
+		B68699BB22BCDC1100E876B4 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		C8356C2870A9681A39D91AE4 /* Pods-rncrash-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rncrash-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rncrash-tvOSTests/Pods-rncrash-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E75E3EEA5C72903837B0B5D0 /* Pods-rncrash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rncrash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rncrash/Pods-rncrash.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -167,6 +182,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B68699BB22BCDC1100E876B4 /* RNGestureHandler.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -193,6 +209,15 @@
 				00E356EE1AD99517003FC87E /* rncrashTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* rncrash-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* rncrash-tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B68699BC22BCDC1100E876B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B68699C122BCDC1200E876B4 /* libRNGestureHandler.a */,
+				B68699C322BCDC1200E876B4 /* libRNGestureHandler-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,6 +351,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B68699BC22BCDC1100E876B4 /* Products */;
+					ProjectRef = B68699BB22BCDC1100E876B4 /* RNGestureHandler.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* rncrash */,
@@ -335,6 +366,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B68699C122BCDC1200E876B4 /* libRNGestureHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGestureHandler.a;
+			remoteRef = B68699C022BCDC1200E876B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B68699C322BCDC1200E876B4 /* libRNGestureHandler-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNGestureHandler-tvOS.a";
+			remoteRef = B68699C222BCDC1200E876B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
@@ -383,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		19050F8DEECD0A5BD0BED4EB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
